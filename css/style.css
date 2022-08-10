@@ -39,10 +39,13 @@
     margin-bottom: 50px;
 }
 
-.header__link-burger {
+.header__burger-header {
     display: none;
 }
 
+.header__link-burger {
+    display: none;
+}
 
 
 /* header */
@@ -147,6 +150,7 @@
     height: 100vh;
     background-color: #ffd300;
     padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 

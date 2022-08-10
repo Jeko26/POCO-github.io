@@ -78,7 +78,7 @@ section {
 
 @media (max-width: 900px) {
     .full-screen {
-        height: 90vh;
+        height: inherit;
     }
 
     .full-screen__image {
@@ -112,6 +112,30 @@ section {
 }
 
 @media (max-width: 800px) {
+    .header__container {
+        align-items: center;
+    }
+
+    .header__burger-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header__burger-main-title {
+        color: white;
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .header__burger-ico {
+        width: 50px;
+    }
+
 
     .header {
         position: inherit;
@@ -130,9 +154,9 @@ section {
     .burger {
         display: flex;
         flex-direction: column;
-        min-height: 60px;
-        max-height: 60px;
-        width: 60px;
+        min-height: 40px;
+        max-height: 40px;
+        width: 40px;
         margin: 0;
         padding: 0;
         justify-content: space-evenly;
@@ -184,7 +208,7 @@ section {
 
     .burger__line {
         width: 100%;
-        height: 3px;
+        height: 2px;
         background-color: #ffd300;
     }
 
@@ -195,8 +219,8 @@ section {
         top: 0;
         background-color: black;
         width: 100% !important;
-        border-bottom-left-radius: 100px;
-        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
 
@@ -260,7 +284,7 @@ section {
 
 @media (max-width: 700px) {
     .full-screen {
-        height: 80vh;
+        height: inherit;
     }
 
     .full-screen__ico {
@@ -312,6 +336,11 @@ section {
 }
 
 @media (max-width: 500px) {
+    .burger--open {
+        max-height: 400px;
+        min-height: 300px;
+    }
+
     .full-screen__group {
         flex-direction: column;
     }
@@ -343,6 +372,10 @@ section {
         flex-direction: column;
     }
 
+    .header__container {
+        flex-direction: inherit;
+    }
+
     .main-medium-heading {
         padding: 0;
         margin-bottom: 20px;
@@ -366,6 +399,10 @@ section {
 
     .container {
         flex-direction: column;
+    }
+
+    .header__container {
+        flex-direction: inherit;
     }
 
     .main-medium-heading {
