@@ -8,7 +8,7 @@
 }
 
 .container {
-    padding: 0 18%;
+    padding: 0 15%;
     display: flex;
 }
 
@@ -18,7 +18,7 @@
     padding: 0;
     margin: 0;
     width: 200px;
-    padding-right: 300px;
+    padding-right: 350px;
 }
 
 .simple-text {
@@ -39,8 +39,20 @@
     margin-bottom: 50px;
 }
 
+.header__link-burger {
+    display: none;
+}
+
+
 
 /* header */
+
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
 .header__burger {
     display: none;
 }
@@ -105,10 +117,29 @@
     width: 50px;
 }
 
+.header__ico:hover {
+    transform: scale(120%);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    cursor: pointer;
+}
+
 .header__link {
     font-family: 'Raleway', sans-serif;
     font-size: 400;
 }
+
+.header__link:hover {
+    border-bottom: 3px solid #ff6700;
+    line-height: 30px;
+}
+
+.header__log:hover {
+    transform: scale(120%);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    cursor: pointer;
+}
+
+
 
 /* full-screen */
 
@@ -149,8 +180,26 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: 24px;
+}
 
+.full-screen__descr {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
 
+.full-screen__descr--yellow:hover:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.full-screen__descr--blue:hover:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.full-screen__descr--black:hover:hover {
+    color: #b0b0b0;
+    cursor: pointer;
 }
 
 .full-screen__ico {
@@ -234,6 +283,7 @@
     display: flex;
     padding: 0;
     width: 300px;
+    margin-right: 50px;
 }
 
 .nutrition__container {
@@ -507,6 +557,10 @@
     height: 100px;
 }
 
+.info__container {
+    padding: 0 18%;
+}
+
 /* footer */
 
 .footer {
@@ -517,7 +571,7 @@
 
 .footer__item {
     color: #898989;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .footer__link {
@@ -564,4 +618,28 @@
 
 .footer__news {
     margin-bottom: 50px;
+}
+
+.footer__email {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    height: 32px;
+    cursor: text;
+    color: white;
+    border: 1px solid #dbdbdb;
+    padding-left: 10px;
+}
+
+.footer__item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer__link:hover {
+    transform: scale(150%);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    cursor: pointer;
 }
